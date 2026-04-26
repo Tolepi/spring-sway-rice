@@ -1,0 +1,88 @@
+* {
+    /* Paleta de Colores Spring */
+    bg-col:  #2A4B42;        /* Verde Bosque */
+    bg-alt:  #4B7F72;        /* Verde Musgo */
+    fg-col:  #F2EB91;        /* Amarillo Crema */
+    selected-col: #F2EB91;   /* Fondo Amarillo al seleccionar */
+    selected-fg:  #282828;   /* Texto oscuro al seleccionar */
+    border-col: #F2EB91;     /* Borde Amarillo */
+    
+    width: 600;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    height: 450px;
+    border: 3px;
+    border-color: @border-col;
+    border-radius: 12px;
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: @bg-col;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @bg-col;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+prompt {
+    background-color: @bg-alt;
+    padding: 6px;
+    text-color: @fg-col;
+    border-radius: 3px;
+    margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 20px 0px 10px;
+    text-color: @fg-col;
+    background-color: @bg-alt;
+    border-radius: 3px;
+    placeholder: "Buscar...";
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 10px 20px 20px 20px;
+    columns: 1;
+    lines: 8;
+    background-color: @bg-col;
+}
+
+element {
+    padding: 5px;
+    background-color: @bg-col;
+    text-color: @fg-col;
+    border-radius: 5px;
+}
+
+element-icon {
+    size: 25px;
+    padding: 0px 10px 0px 0px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element selected {
+    background-color: @selected-col;
+    text-color: @selected-fg;
+}

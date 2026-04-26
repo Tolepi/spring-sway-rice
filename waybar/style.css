@@ -1,0 +1,92 @@
+/* --- WAYBAR CSS - ESTILO SPRING --- */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #2A4B42; /* Verde Fondo Principal */
+    color: #F2EB91;           /* Amarillo Texto Principal */
+    border-bottom: 2px solid #504945;
+}
+
+/* --- Módulos Generales --- */
+#workspaces,
+#window,
+#mode,
+#pulseaudio,
+#network,
+#battery,
+#clock,
+#tray {
+    background-color: #4B7F72; /* Verde Acento (más claro) */
+    color: #F2EB91;            /* Amarillo */
+    margin: 4px 3px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+/* --- Workspaces --- */
+#workspaces button {
+    padding: 0 5px;
+    color: #F2EB91;
+    background-color: transparent;
+}
+
+#workspaces button.focused {
+    color: #282828;            /* Texto Oscuro */
+    background-color: #F2EB91;  /* Fondo Amarillo (Resaltado) */
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    background-color: #BF616A;
+}
+
+#workspaces button:hover {
+    background-color: #504945;
+}
+
+/* --- Título de la Ventana --- */
+#window {
+    background-color: transparent;
+    color: #F2EB91;
+}
+
+/* --- Específico de Módulos --- */
+#clock {
+    background-color: #4B7F72;
+}
+
+#battery.charging, #battery.plugged {
+    color: #F2EB91;
+    background-color: #A3BE8C; /* Un verde más brillante */
+}
+
+@keyframes blink {
+    to {
+        color: #F2EB91;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #BF616A;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#pulseaudio.muted {
+    background-color: #3B4252;
+}
+
+#tray {
+    background-color: #4B7F72;
+}
