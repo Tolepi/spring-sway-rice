@@ -9,5 +9,9 @@ Dependencies
 - Waybar (bar)
 - foot (terminal)
 
-Preview:
-  <img width="2549" height="1811" alt="1004357" src="https://github.com/user-attachments/assets/d677a84a-065d-449e-b2b0-adf63cef6614" />
+Previews:
+  <img width="1366" height="768" alt="2026-04-26_02-04-1777171866" src="https://github.com/user-attachments/assets/a0f545d3-26d3-47d8-8bfc-1a5ae27b3b89" />
+
+<img width="1366" height="768" alt="2026-04-26_02-04-1777171851" src="https://github.com/user-attachments/assets/bcf18219-2b1b-4c19-ad25-80290c604f9f" />
+
+<img width="1366" height="768" alt="2026-04-26_02-04-1777171872" src="https://github.com/user-attachments/assets/f4398854-7628-4184-a42b-f83ef09d3028" />
