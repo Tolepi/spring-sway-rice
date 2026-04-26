@@ -3,6 +3,10 @@ A SwayWM rice based on the Spring color scheme
 
 Hello! Welcome to my rice, based on the Spring color scheme.
 
+WARNING???? 
+
+- the messages on the sway config are on spanish im too lazy to convert them to english
+
 Dependencies
 - Sway (window manager)
 - Rofi (app launcher)
